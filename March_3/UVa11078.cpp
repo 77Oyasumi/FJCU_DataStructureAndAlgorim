@@ -58,3 +58,25 @@ cin.tie(NULL) 取消 cin 和 cout 的绑定。
 
 
 */
+
+/*
+
+int main(){
+    int A[100000], n;
+    int T;
+    scanf("%d", &T);
+    while(T--){
+        scnaf("%d", &n);
+        for(int i = 0; i < n; i++){
+            scanf("%d", &A[i]);
+        }
+        int ans = A[0] - A[1];
+        int MaxA = A[0];
+        for(int j = 1; j < n; j++){
+            ans = max(ans, MaxA - A[j]);
+            MaxA = max(A[j], MaxA);
+        }
+        printf("%d\n", ans);
+    }
+}
+*/
